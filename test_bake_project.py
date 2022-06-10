@@ -341,7 +341,7 @@ def test_black(cookies, use_black, expected):
         extra_context={'use_black': use_black}
     ) as result:
         assert result.project.isdir()
-        requirements_path = result.project.join('requirements_dev.txt')
+        requirements_path = result.project.join('requirements.txt')
         assert ("black" in requirements_path.read()) is expected
         makefile_path = result.project.join('Makefile')
         assert ("black --check" in makefile_path.read()) is expected

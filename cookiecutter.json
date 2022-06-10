@@ -1,7 +1,7 @@
 {
   "full_name": "Yu Zheng",
   "email": "yu.zheng@inboc.net",
-  "git_url": "https://github.com",
+  "git_url": "https://gitlab.inboc.net/",
   "github_username": "zhengyu-inboc",
   "project_name": "Python Boilerplate",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
