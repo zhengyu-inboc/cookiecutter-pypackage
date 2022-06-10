@@ -1,6 +1,6 @@
-FROM centos/python-36-centos7
-WORKDIR /usr/src/app
-COPY requirements_dev.txt .
+FROM harbor.inboc.net/images/ubuntu_conda:v1
+WORKDIR /opt
+COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install numpy
 RUN pip install -r requirements.txt
